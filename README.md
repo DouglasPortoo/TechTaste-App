@@ -17,6 +17,3 @@ Além disso, exploramos mecanismos de resiliência, como circuit breaker e fallb
 
 ![image](https://github.com/user-attachments/assets/c292341a-4a9e-4568-8507-40ccb7cd226a)
 
-## 📚 Mais informações do curso
-
-Gostou do projeto e quer conhecer mais? Você pode acessar o site do curso que desenvolve o projeto desde o começo!

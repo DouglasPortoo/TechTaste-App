@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:14.7
+    container_name: postgres-container-ms-pedidos
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: ms-pedidos
+    volumes:
+      - postgres_pedidos_data:/var/lib/postgresql/data
+    restart: "no"
+
+  postgres_pagamentos:
+    image: postgres:14.7
+    container_name: postgres-container-ms-pagamentos
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: ms-pagamentos
+    volumes:
+      - postgres_pagamentos_data:/var/lib/postgresql/data
+    restart: "no"
+
+volumes:
+  postgres_pedidos_data:
+  postgres_pagamentos_data:
